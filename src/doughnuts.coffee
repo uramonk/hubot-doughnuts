@@ -45,7 +45,7 @@ module.exports = (robot) ->
 		counter.setFirstDay robot
 		dc = msg.message.text.split(/:doughnut:/).length - 1;
 		count = counter.addCountToday robot, dc
-		msg.send 'Added doughnuts today: ' + dc
+		msg.send "Added doughnuts today: #{dc}"
 	
 	robot.respond /add day (\d{4}\/\d{2}\/\d{2}) (\d+)$/, (msg) ->
 		counter.setFirstSpecificDay robot, msg.match[1]
@@ -57,4 +57,4 @@ module.exports = (robot) ->
 		if addnum <= 0
 			return
 		else 
-			msg.send 'Added doughnuts ' + dateString + ': ' + count
+			msg.send "Added doughnuts #{dateString}: #{count}"

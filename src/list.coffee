@@ -30,7 +30,7 @@ module.exports = (robot) ->
 			date.addYears(1)
 			if Date.compare(date, today) == 1
 				break
-		msg.send '```\n' + sendMessage + '```\n'
+		msg.send "```\n#{sendMessage}```\n"
 		
 	robot.respond /list month (\d{4}\/\d{2})$/, (msg) ->
 		ym = msg.match[1].split('/')
@@ -46,7 +46,7 @@ module.exports = (robot) ->
 			date.addHours(24)
 			if date.getMonth() > Number(month) - 1 or date.getFullYear() > Number(year)
 				break
-		msg.send '```\n' + sendMessage + '```\n'
+		msg.send "```\n#{sendMessage}```\n"
 	
 	robot.respond /list year (\d{4})$/, (msg) ->
 		year = msg.match[1]
@@ -60,4 +60,4 @@ module.exports = (robot) ->
 			date.addMonths(1)
 			if date.getFullYear() > Number(year)
 				break
-		msg.send '```\n' + sendMessage + '```\n'
+		msg.send "```\n#{sendMessage}```\n"
