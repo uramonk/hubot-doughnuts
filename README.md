@@ -6,9 +6,9 @@ See [`src/doughnuts.coffee`](src/doughnuts.coffee) for full documentation.
 
 ## Installation
 
-In hubot project repo, run:
+In hubot project repo (Github), run:
 
-`npm install hubot-doughnuts --save`
+`npm install --save uramonk/hubot-doughnuts`
 
 Then add **hubot-doughnuts** to your `external-scripts.json`:
 
