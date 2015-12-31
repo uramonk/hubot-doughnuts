@@ -11,7 +11,7 @@
 #   uramonk <https://github.com/uramonk>
 
 require('date-utils');
-counter = require('../func/counter')
+counter = require('./func/counter')
 
 module.exports = (robot) ->
 	robot.respond /clear today$/, (msg) ->
