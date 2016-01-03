@@ -1,4 +1,5 @@
-# hubot-doughnuts [![Build Status](https://travis-ci.org/uramonk/hubot-doughnuts.svg?branch=master)](https://travis-ci.org/uramonk/hubot-doughnuts)
+# hubot-doughnuts
+[![Build Status](https://travis-ci.org/uramonk/hubot-doughnuts.svg?branch=master)](https://travis-ci.org/uramonk/hubot-doughnuts) [![Code Climate](https://codeclimate.com/github/uramonk/hubot-doughnuts/badges/gpa.svg)](https://codeclimate.com/github/uramonk/hubot-doughnuts)
 
 A hubot script that does doughnuts management.
 
