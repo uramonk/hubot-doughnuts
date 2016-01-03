@@ -9,3 +9,7 @@ cache:
     - node_modules
 notifications:
   email: false
+
+after_script:
+  - codeclimate-test-reporter < ./coverage/lcov.info
+
