@@ -17,6 +17,13 @@ module.exports = (robot) ->
 	robot.respond /clear today$/, (msg) ->
 		count = counter.clearCountToday robot
 		msg.send 'Clear doughnuts count today'
+	
+	robot.respond /clear all/, (msg) ->
+		firstday = counter.getFirstDay robot
+		count = counter.clearCountAll robot
+		date = new Date(firstday)
+		dateString = date.toFormat 'YYYY/MM/DD'
+		msg.send "Clear all doughnuts count from #{dateString}"
 		
 	robot.respond /clear day (\d{4}\/\d{2}\/\d{2})$/, (msg) ->
 		date = new Date(msg.match[1])
@@ -38,9 +45,3 @@ module.exports = (robot) ->
 		dateString = date.toFormat 'YYYY'
 		msg.send "Clear doughnuts count #{dateString}"
 	
-	robot.respond /clear all/, (msg) ->
-		firstday = counter.getFirstDay robot
-		count = counter.clearCountAll robot
-		date = new Date(firstday)
-		dateString = date.toFormat 'YYYY/MM/DD'
-		msg.send "Clear all doughnuts count from #{dateString}"
