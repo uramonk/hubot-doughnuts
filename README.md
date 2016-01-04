@@ -36,15 +36,4 @@ user1>> hubot-doughnuts :doughnut:
 hubot>> Added doughnuts today: 1
 ```
 
-## Notes
-
-This bot's message is optimized for Slack.
-For example:
-```
-user1>> hubot-doughnuts list
-hubot>> ```
-hubot>> 2014: :doughnut:x25
-hubot>> 2015: :doughnut::doughnut:
-hubot>> ```
-```
 

@@ -25,15 +25,6 @@
 #	hubot-doughnuts list month YYYY/MM - list doughnuts YYYY/MM
 #	hubot-doughnuts list year YYYY - list doughnuts YYYY
 #
-# Notes:
-#	This bot's message is optimized for Slack.
-#	For example:
-#	user1>> hubot-doughnuts list
-#	hubot>> ```
-#	hubot>> 2014: :doughnut:x25
-#	hubot>> 2015: :doughnut::doughnut:
-#	hubot>> ```
-#
 # Author:
 #   uramonk <https://github.com/uramonk>
 
