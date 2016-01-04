@@ -26,7 +26,7 @@ module.exports = (robot) ->
 		while true
 			count = counter.getCountYear robot, year
 			dateString = date.toFormat 'YYYY'
-			sendMessage = msgFunc.addDoughnutToMessageWithPrefixAndSuffix sendMessage, count, dateString + ': ', ''
+			sendMessage = msgFunc.addDoughnutToMessageWithPrefixAndSuffix sendMessage, count, dateString + ': ', '\n'
 			date.addYears(1)
 			if Date.compare(date, today) == 1
 				break
@@ -42,7 +42,7 @@ module.exports = (robot) ->
 			key = counter.getKey date
 			count = counter.getCount robot, key
 			dateString = date.toFormat 'YYYY/MM/DD'
-			sendMessage = msgFunc.addDoughnutToMessageWithPrefixAndSuffix sendMessage, count, dateString + ': ', ''
+			sendMessage = msgFunc.addDoughnutToMessageWithPrefixAndSuffix sendMessage, count, dateString + ': ', '\n'
 			date.addHours(24)
 			if date.getMonth() > Number(month) - 1 or date.getFullYear() > Number(year)
 				break
